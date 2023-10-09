@@ -1,0 +1,53 @@
+.CountriesList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  grid-gap: 4rem;
+}
+
+.CountriesList-item {
+  background: hsl(210 22% var(--luminosity-tertiary));
+  border-radius: var(--border-radius);
+  box-shadow: 0 0px 10px hsl(0, 0%, var(--l-90));
+}
+
+.CountryPreview {
+  color: inherit;
+  text-decoration: none;
+}
+
+.CountryPreview-details {
+  margin: var(--vgapsmall);
+}
+
+.CountryPreview-details > dd {
+}
+
+.CountryPreview-details > dt {
+  float: left;
+  font-weight: 500;
+  margin-right: 0.25em;
+}
+
+.CountryPreview-flag {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.CountryPreview-flagCointaner {
+  height: 0;
+  overflow: hidden;
+  padding-top: 57%;
+  position: relative;
+}
+
+.CountryPreview-name {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: var(--vgapsmall);
+}

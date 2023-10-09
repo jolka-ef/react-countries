@@ -1,0 +1,92 @@
+.BordersList {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 3em;
+}
+
+.BordersList-button {
+  background: hsl(210 22% var(--luminosity-tertiary));
+  border-radius: var(--border-radius);
+  border-style: none;
+  box-shadow: 0 0 0 2px hsl(0, 0%, var(--l-90));
+  color: inherit;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  padding: 0.25em 1.25em;
+}
+
+.BordersList dd {
+  display: inline-block;
+}
+
+.BordersList dt {
+  font-weight: 500;
+}
+
+.Country {
+  margin: 4rem auto;
+}
+
+.Country-button {
+  background: hsl(210 22% var(--luminosity-tertiary));
+  border-radius: var(--border-radius);
+  border-style: none;
+  box-shadow: 0 0 0 2px hsl(0, 0%, var(--l-90));
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  margin-top: 4rem;
+  padding: 0.5em 1.75em;
+}
+
+.Country-flag {
+  width: 100%;
+}
+
+.Country-flagCointaner {
+  flex: 0 0 auto;
+  width: min(84vw, 550px);
+}
+
+.Country-infoCointaner {
+  flex: 1 0 auto;
+}
+
+.Country-name {
+  font-size: 1.75em;
+  font-weight: bolder;
+  margin-top: 1em;
+}
+
+.DetailsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.DetailsList-item {
+  display: flex;
+}
+
+.DetailsList-item dt {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.DetailsList-item dd {
+  margin-left: 0.25em;
+}
+
+@supports (display: grid) {
+  @media (min-width: 80em) {
+    .Country {
+      display: grid;
+      gap: 0 6rem;
+      grid-template-columns: auto 1fr;
+      max-width: 80rem;
+    }
+  }
+}

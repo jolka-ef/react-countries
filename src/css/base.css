@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-hs: 200 15%;
+  --border-radius: 5px;
+  --vgap: 5vw;
+  --vgapsmall: 1.5rem;
+}
+
+body {
+  background: hsl(0, 0%, var(--luminosity-primary));
+  box-sizing: border-box;
+  color: hsl(var(--primary-hs) var(--luminosity-secondary));
+  font: 1em/1.5 system-ui;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+svg {
+  fill: currentColor;
+  width: 1.5em;
+}
+
+[data-colors="dark"] {
+  --luminosity-primary: 16%;
+  --luminosity-secondary: 100%;
+  --luminosity-tertiary: 22%;
+  --luminosity-quaternary: 70%;
+}
+
+[data-colors="light"] {
+  --luminosity-primary: 98%;
+  --luminosity-secondary: 10%;
+  --luminosity-tertiary: 100%;
+  --luminosity-quaternary: 45%;
+}

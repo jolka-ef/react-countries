@@ -1,0 +1,11 @@
+.Header-title {
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
+.Header-titleContainer {
+  background: hsl(210 22% var(--luminosity-tertiary));
+  box-shadow: 0 7px 5px hsl(0, 0%, var(--l-90));
+  padding: 1.5em var(--vgap);
+  display: flex;
+}

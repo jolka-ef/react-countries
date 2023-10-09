@@ -1,0 +1,17 @@
+.SwitchColorMode {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.SwitchColorMode-icon {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+.SwitchColorMode-text {
+  text-align: left;
+}

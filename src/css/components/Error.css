@@ -1,0 +1,18 @@
+.Error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.Error-icon {
+  color: hsl(9, 77%, var(--luminosity-quaternary));
+  flex: 0 0 auto;
+  width: 3em;
+}
+
+.Error-text {
+  color: hsl(9, 77%, var(--luminosity-quaternary));
+  font-size: 1.25em;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+}

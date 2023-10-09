@@ -1,0 +1,62 @@
+.Filter {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--button-shadow);
+  color: currentColor;
+  cursor: pointer;
+  min-width: 20ch;
+  outline: none;
+  padding: 1em;
+  width: 100%;
+  z-index: 1;
+}
+
+.Filter,
+.Filter-label::after {
+  grid-area: select;
+}
+
+.Filter-label {
+  background: hsl(210 22% var(--luminosity-tertiary));
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: grid;
+  grid-template-areas: "select";
+  position: relative;
+}
+
+.Filter-label::after {
+  align-self: center;
+  content: "";
+  justify-self: end;
+  width: 1.1rem;
+  height: 0.6rem;
+  background: currentColor;
+  border-radius: 50%;
+  clip-path: polygon(100% 30%, 0% 30%, 50% 101%);
+  margin-right: 1em;
+}
+
+/* Hide arrow icon in IE browsers */
+.Filter::-ms-expand {
+  display: none;
+}
+
+.Filter:hover {
+  border-color: #888;
+}
+
+.Filter:focus {
+  border-color: var(--border-color);
+  box-shadow: var(--button-shadow-active);
+  color: var(--text-color-deep);
+  outline: none;
+}
+
+.Filter option {
+  background: hsl(202, 26%, var(--luminosity-tertiary));
+  font-weight: normal;
+}

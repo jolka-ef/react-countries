@@ -1,0 +1,9 @@
+.Site-content {
+  padding: 2rem var(--vgap);
+}
+
+.Site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
